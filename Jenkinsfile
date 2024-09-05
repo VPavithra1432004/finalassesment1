@@ -28,7 +28,7 @@ pipeline {
         stage('docker deploy'){
             steps{
                 sh 'docker container rm -f finalassesment1'
-                sh 'docker run --name module04 -itd -p 9393:9393 finalassesment1:${BUILD_NUMBER}'
+                sh 'docker run --name finalassesment1 -itd -p 9393:9393 finalassesment1:${BUILD_NUMBER}'
                 echo 'docker container is created'
                 echo 'docker container is running'
             }
