@@ -5,7 +5,7 @@ pipeline {
       stage('Git Checkout') {
             steps {
                 script {
-                    git url: 'https://github.com/VPavithra1432004/finalassesment1'
+                    git url: 'https://github.com/VPavithra1432004/finalassesment-1'
                       echo 'git checkout is done code pulled from github to jenkins workspace'
                 }
             }
